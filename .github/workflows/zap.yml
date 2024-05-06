@@ -21,6 +21,6 @@ jobs:
         uses: zaproxy/action-baseline@66042c8e7e24680119199a017e5b0e8603bf4dae # v0.12.0
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          target: 'https:///app.dev.rewind.com'
+          target: 'https://app.dev.rewind.com'
           rules_file_name: '.zap/rules.tsv'
           cmd_options: '-a -j'
