@@ -27,7 +27,7 @@ jobs:
         uses: actions/github-script@v7
         id: issue-title
         with:
-          script: return `ZAP Scan Baseline Report ${new Date().toUTCString()}`
+          script: return `ZAP Scan Baseline Report ${<domain>}`
           result-encoding: string
       
       - name: Scan execution Issue Title
